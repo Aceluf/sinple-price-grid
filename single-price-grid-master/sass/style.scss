@@ -1,0 +1,215 @@
+@import 'libs/functions.scss';
+@import 'libs/reset.scss';
+@import 'libs/variables.scss';
+
+$base-font-size: 16px;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Karla', sans-serif;
+    font-size: $base-font-size;
+}
+
+body {
+    background-color: $light_gray;
+    height: 100%;
+    max-width: rem(1440);
+}
+
+.container {
+    width: rem(620);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(130);
+    margin-bottom: rem(100);
+    border-radius: rem(10);
+    background-color: $white;
+    height: 100%;
+    box-shadow: 5px 10px 15px 15px $light_gray;
+    
+
+    .container-description {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: rem(40);
+        padding-left: rem(40);
+        padding-right: rem(40);
+        padding-bottom: rem(40);
+        box-shadow: 0 2px 6px -4px $cyan;
+
+        .description-title {
+            color: $cyan;
+            margin-bottom: rem(25);
+            font-size: rem(22);
+            font-weight: 700;
+        }
+
+        .description-title-2 {
+            color: $bright-yellow;
+            margin-bottom: rem(15);
+            font-weight: 700;
+            font-size: rem(18);
+        }
+
+        .description-text {
+            color: $grayish_blue-2;
+            line-height: 1.5;
+        }
+    }
+
+    .container-info {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+
+        .container-subscription {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+            width: 100%;
+            background-color: $cyan;
+            border-bottom-left-radius: 10px;
+            padding-top: rem(25);
+            padding-right: rem(20);
+            padding-left: rem(35);
+            height: rem(260);
+
+            .subscription-title {
+                color: $white;
+                margin-top: rem(20);
+                margin-bottom: rem(15);
+            }
+
+            .subscription-price {
+                font-size: rem(26);
+                color: $white;
+                font-weight: 700;
+                margin-bottom: rem(12);
+
+                .text-muted {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: lighten($cyan-2, $amount: 20%);
+                    display: inline-block;
+                    transform: translate(4px, -5px);
+                    
+                }
+            }
+
+            .subscription-info {
+                color: $light_gray;
+                font-size: rem(14);
+            }
+
+            .subscription-btn {
+                color: $white;
+                text-decoration: none;
+                background-color: $bright-yellow;
+                display: inline-block;
+                margin-top: rem(25);
+                padding: rem(15) rem(90);
+                border-radius: 5px;
+                box-shadow: 0 0 5px 5px $cyan-2;
+                transition: background-color 0.3s, box-shadow 0.3s;
+
+                &:hover {
+                    background-color: lighten($bright_yellow, $amount: 10%);
+                    box-shadow: 0 0 5px 5px lighten($cyan, $amount: 20%);
+                    
+                }
+            }
+        }
+
+        .container-advantages {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+            width: 100%;
+            padding-right: 25px;
+            padding-top: rem(30);
+            padding-left: 40px;
+            
+            background-color: lighten($cyan, $amount: 5%);
+            border-bottom-right-radius: 10px;
+
+            .advantages-title {
+                color: $white;
+                font-weight: 700;
+                margin-top: rem(13);
+                margin-bottom: rem(16);
+            }
+
+            .list-unstyled {
+                color: $light_gray;
+                font-size: rem(14);
+
+                .list-text {
+                    margin-bottom: rem(5);
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: rem(320);
+        margin-top: rem(70);
+
+        .container-description {
+            padding-top: rem(30);
+            padding-right: rem(25);
+            padding-left: rem(25);
+
+            .description-title {
+                font-size: rem(18);
+            }
+
+            .description-title-2 {
+                font-size: rem(16);
+            }
+
+            .description-text {
+                font-size: rem(14);
+            }
+        }
+
+        .container-info {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: rem(500);
+
+            .container-subscription {
+                max-width: 100%;
+                flex: 0 0 50%;
+                border-bottom-left-radius: 0;
+                max-height: 50%;
+                padding-top: rem(15);
+
+                .subscription-title {
+                    margin-top: rem(10);
+                }
+            }
+
+            .container-advantages {
+                max-width: 100%;
+                flex: 0 0 50%;
+                border-bottom-left-radius: 10px;
+                max-height: 50%;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #e5eff5;
+  height: 100%;
+  max-width: 90rem;
+}
+
+.container {
+  width: 38.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.125rem;
+  margin-bottom: 6.25rem;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 5px 10px 15px 15px #e5eff5;
+}
+.container .container-description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
+  box-shadow: 0 2px 6px -4px #2ab2af;
+}
+.container .container-description .description-title {
+  color: #2ab2af;
+  margin-bottom: 1.5625rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.container .container-description .description-title-2 {
+  color: #c0df34;
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.container .container-description .description-text {
+  color: #98a6bd;
+  line-height: 1.5;
+}
+.container .container-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .container-info .container-subscription {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  background-color: #2ab2af;
+  border-bottom-left-radius: 10px;
+  padding-top: 1.5625rem;
+  padding-right: 1.25rem;
+  padding-left: 2.1875rem;
+  height: 16.25rem;
+}
+.container .container-info .container-subscription .subscription-title {
+  color: #fff;
+  margin-top: 1.25rem;
+  margin-bottom: 0.9375rem;
+}
+.container .container-info .container-subscription .subscription-price {
+  font-size: 1.625rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.container .container-info .container-subscription .subscription-price .text-muted {
+  font-size: 14px;
+  font-weight: 400;
+  color: #73dedc;
+  display: inline-block;
+  transform: translate(4px, -5px);
+}
+.container .container-info .container-subscription .subscription-info {
+  color: #e5eff5;
+  font-size: 0.875rem;
+}
+.container .container-info .container-subscription .subscription-btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #c0df34;
+  display: inline-block;
+  margin-top: 1.5625rem;
+  padding: 0.9375rem 5.625rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px #2dbebc;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container .container-info .container-subscription .subscription-btn:hover {
+  background-color: #cee660;
+  box-shadow: 0 0 5px 5px #66dbd9;
+}
+.container .container-info .container-advantages {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  padding-right: 25px;
+  padding-top: 1.875rem;
+  padding-left: 40px;
+  background-color: #2fc6c4;
+  border-bottom-right-radius: 10px;
+}
+.container .container-info .container-advantages .advantages-title {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 0.8125rem;
+  margin-bottom: 1rem;
+}
+.container .container-info .container-advantages .list-unstyled {
+  color: #e5eff5;
+  font-size: 0.875rem;
+}
+.container .container-info .container-advantages .list-unstyled .list-text {
+  margin-bottom: 0.3125rem;
+}
+.container .container-info .container-advantages .list-unstyled .list-text:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin-top: 4.375rem;
+  }
+  .container .container-description {
+    padding-top: 1.875rem;
+    padding-right: 1.5625rem;
+    padding-left: 1.5625rem;
+  }
+  .container .container-description .description-title {
+    font-size: 1.125rem;
+  }
+  .container .container-description .description-title-2 {
+    font-size: 1rem;
+  }
+  .container .container-description .description-text {
+    font-size: 0.875rem;
+  }
+  .container .container-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 31.25rem;
+  }
+  .container .container-info .container-subscription {
+    max-width: 100%;
+    flex: 0 0 50%;
+    border-bottom-left-radius: 0;
+    max-height: 50%;
+    padding-top: 0.9375rem;
+  }
+  .container .container-info .container-subscription .subscription-title {
+    margin-top: 0.625rem;
+  }
+  .container .container-info .container-advantages {
+    max-width: 100%;
+    flex: 0 0 50%;
+    border-bottom-left-radius: 10px;
+    max-height: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
